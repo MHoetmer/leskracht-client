@@ -15,7 +15,13 @@ import createTypography from "@material-ui/core/styles/createTypography";
 import { createMuiTheme } from "@material-ui/core/styles/createMuiTheme";
 import createPalette from "@material-ui/core/styles/createPalette";
 import withTheme from "@material-ui/core/styles/withTheme";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIgloo } from "@fortawesome/free-solid-svg-icons";
+import Skillsfactory from "./Components/Skillsfactory";
+import RBWKSpectrumbox from "./Components/RBWKSpectrumbox";
 
+library.add(faIgloo);
 // const theme = createMuiTheme({
 //   typography: {
 //     fontFamily: ["Dosis"]
@@ -43,6 +49,8 @@ class App extends Component {
           <Route path="/ons" component={Ons} />
           <Route path="/Users" component={Users} />
           <Route path="/educatiecirkel" component={Educatiecirkel} />
+          <Route path="/skillsfactory" component={Skillsfactory} />
+          <Route path="/RBWKSpectrumbox" component={RBWKSpectrumbox} />
         </div>
       </Router>
       // </MuiThemeProvider>

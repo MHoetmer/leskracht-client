@@ -74,10 +74,10 @@ const styles = theme => ({
     }
   },
   subMenuItem: {
-    fontFamily: "Dosis",
-    textTransform: "inherit",
-    textDecorationLine: "none",
     color: "#00000",
+    fontSize: 16,
+    fontFamily: "Dosis",
+    textDecorationLine: "none",
     "&:hover": {
       color: "#40a9ff",
       opacity: 1
@@ -284,19 +284,31 @@ class MenuAppBar extends Component {
                               onClick={this.handleClose}
                               className={classes.subMenuItem}
                             >
-                              Profile
+                              <Link
+                                className={classes.subMenuItem}
+                                to="/RBWKSpectrumbox"
+                              >
+                                Regenboog wereldkist & Spectrumbox
+                              </Link>
                             </MenuItem>
                             <MenuItem
                               onClick={this.handleClose}
                               className={classes.subMenuItem}
                             >
-                              Regenboog wereldkist & Spectrumbox
+                              <Link className={classes.subMenuItem} to="/meloo">
+                                Meloo
+                              </Link>
                             </MenuItem>
                             <MenuItem
                               onClick={this.handleClose}
                               className={classes.subMenuItem}
                             >
-                              Meloo
+                              <Link
+                                className={classes.subMenuItem}
+                                to="/skillsfactory"
+                              >
+                                Skillsfactory
+                              </Link>
                             </MenuItem>
                           </MenuList>
                         </ClickAwayListener>

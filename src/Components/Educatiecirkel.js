@@ -138,6 +138,7 @@ class Educatiecirkel extends Component {
                     (leer)gebieden van belang zijn.
                   </h4>
                 </Grid>
+
                 <Grid item xs={6}>
                   <img src={Leercirkel} className={classes.leercirkel} />
                 </Grid>

@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import MenuAppBar from "./MenuAppBar";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
+import Regenboogwereldkist from "../Images/Regenboogwereldkist.png";
+import Meloo from "../Images/Meloo.png";
+import Button from "@material-ui/core/Button";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ButtomBanner from "./ButtomBanner";
+import Fab from "@material-ui/core/Fab";
+import { youtube1 } from "@fortawesome/react-fontawesome";
 
 const styles = theme => ({
   header: {
@@ -93,7 +100,7 @@ const styles = theme => ({
   }
 });
 
-class Meloo extends Component {
+class RBWKSpectrumbox extends Component {
   state = {};
 
   render() {
@@ -104,7 +111,9 @@ class Meloo extends Component {
           content={
             <Grid container direction="row" justify="center" spacing={16}>
               <Grid item key={5} xs={12}>
-                <h1 className={classes.header}>MELOO</h1>
+                <h1 className={classes.header}>
+                  WERKWIJZE EN MATERIAAL WERELDORIËNTATIE & TAAL
+                </h1>
               </Grid>
             </Grid>
           }
@@ -114,4 +123,4 @@ class Meloo extends Component {
   }
 }
 
-export default withStyles(styles)(Meloo);
+export default withStyles(styles)(RBWKSpectrumbox);
