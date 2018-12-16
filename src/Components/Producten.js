@@ -7,10 +7,13 @@ class Producten extends Component {
   render() {
     return (
       <div>
-        <MenuAppBar />
-        <div className="content">
-          <h1 className="heading">PRODUCTEN</h1>
-        </div>
+        <MenuAppBar
+          content={
+            <div className="content">
+              <h1 className="heading">PRODUCTEN</h1>
+            </div>
+          }
+        />
       </div>
     );
   }
